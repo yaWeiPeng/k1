@@ -13,13 +13,13 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => '127.0.0.1',
+    'hostname'        => '39.103.199.19',
     // 数据库名
-    'database'        => 'bk',
+    'database'        => 'www_lilymin_com',
     // 用户名
-    'username'        => 'bk',
+    'username'        => 'www_lilymin_com',
     // 密码
-    'password'        => 'keweipeng',
+    'password'        => 'XisG8BhTwL28NMwa',
     // 端口
     'hostport'        => '',
     // 连接dsn
