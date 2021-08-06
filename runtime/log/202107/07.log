@@ -1,0 +1,52 @@
+---------------------------------------------------------------
+
+[2021-07-07T10:44:51+08:00] 127.0.0.1 GET kkk.com/
+[运行时间：0.053919s] [吞吐率：18.55req/s] [内存消耗：3,431.50kb] [文件加载：84]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\www.lilymin.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kkk.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'bk'@'localhost' (using password: YES)[D:\phpstudy_pro\WWW\www.lilymin.com\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+
+[2021-07-07T10:57:50+08:00] 127.0.0.1 GET kkk.com/
+[运行时间：0.433662s] [吞吐率：2.31req/s] [内存消耗：3,778.27kb] [文件加载：88]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\www.lilymin.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'kkk.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy_pro\WWW\www.lilymin.com\application\index\view\index.html [ array (
+  0 => 'title',
+  1 => 'novel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.159818s ] mysql:host=39.103.199.19;dbname=www_lilymin_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `k_novel` [ RunTime:0.078666s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `k_novel` WHERE (  `state` = 1 ) AND `k_novel`.`delete_time` IS NULL [ RunTime:0.078708s ]
+[ sql ] [ SQL ] SELECT * FROM `k_novel` WHERE (  `state` = 1 ) AND `k_novel`.`delete_time` IS NULL ORDER BY `id` DESC LIMIT 0,30 [ RunTime:0.066812s ]

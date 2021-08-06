@@ -221,6 +221,13 @@ class Base extends Controller
 		}
 		return $search;
 	}
+
+    /**
+     * 操作日志
+     */
+    function operationLog(){
+        dump($this->user);
+    }
 }
 
 

@@ -6,6 +6,7 @@ use think\facade\Config;
 
 
 use think\facade\Session;
+use think\Cache;
 
 class Admin extends Base
 {
@@ -16,6 +17,8 @@ class Admin extends Base
 
 	public function welcome()
     {
+        echo redis()->get('task_num_1');
+//        $this->operationLog();
 		$mysql_version = Db::query('select VERSION() as sqlversion');
 		$_SERVER['MYSQL_VERSION'] = $mysql_version[0]['sqlversion'];
 		$_SERVER['PHP_VERSION'] = PHP_VERSION;		//php版本
