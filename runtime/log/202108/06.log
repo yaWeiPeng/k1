@@ -3446,3 +3446,112 @@
 [ sql ] [ SQL ] select VERSION() as sqlversion [ RunTime:0.068190s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `k_set` [ RunTime:0.068277s ]
 [ sql ] [ SQL ] SELECT `value` FROM `k_set` WHERE  `name` = 'title' LIMIT 1 [ RunTime:0.068250s ]
+---------------------------------------------------------------
+
+[2021-08-06T12:00:45+08:00] 127.0.0.1 GET kkk.com/admin
+[运行时间：6.717079s] [吞吐率：0.15req/s] [内存消耗：3,753.86kb] [文件加载：86]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\www.lilymin.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/admin/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1vct8rf8rhbspik5qhkqmle2rp',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kkk.com/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'kkk.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\phpstudy_pro\WWW\www.lilymin.com\application\admin\view\index.html [ array (
+  0 => 'userInfo',
+) ]
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.125788s ] mysql:host=39.103.199.19;dbname=www_lilymin_com;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `k_set` [ RunTime:0.080834s ]
+[ sql ] [ SQL ] SELECT `value` FROM `k_set` WHERE  `name` = 'title' LIMIT 1 [ RunTime:0.080162s ]
+[ sql ] [ SQL ] SELECT `value` FROM `k_set` WHERE  `name` = 'ico' LIMIT 1 [ RunTime:0.081955s ]
+[ sql ] [ SQL ] SELECT `value` FROM `k_set` WHERE  `name` = 'title' LIMIT 1 [ RunTime:0.079848s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `k_column` [ RunTime:0.079927s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.080938s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 3  AND `status` = 0 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079777s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 4  AND `status` = 0 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079608s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 2  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079802s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 32  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.084427s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 33  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.080061s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 34  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.080955s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 35  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079735s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 36  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.080330s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 37  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079661s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 38  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:4.019575s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 39  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079991s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 48  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079872s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 49  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.081050s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 50  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.081572s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 54  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.081924s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 55  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.085818s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 56  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079723s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 57  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.082233s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 58  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.080595s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 59  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.091247s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 60  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.080533s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 61  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079633s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 62  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079190s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 63  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.079322s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 66  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.080016s ]
+[ sql ] [ SQL ] SELECT * FROM `k_column` WHERE (  `pid` = 67  AND `status` = 1 ) AND `k_column`.`delete_time` IS NULL [ RunTime:0.085737s ]
+---------------------------------------------------------------
+
+[2021-08-06T12:00:46+08:00] 127.0.0.1 GET kkk.com/welcome
+[运行时间：0.378855s] [吞吐率：2.64req/s] [内存消耗：3,310.42kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\www.lilymin.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'welcome',
+  'route' => 'admin/admin/welcome',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=1vct8rf8rhbspik5qhkqmle2rp',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://kkk.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'kkk.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy_pro\WWW\www.lilymin.com\application\admin\view\welcome.html [ array (
+  0 => 'userInfo',
+  1 => 'server',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109076s ] mysql:host=39.103.199.19;dbname=www_lilymin_com;charset=utf8
+[ sql ] [ SQL ] select VERSION() as sqlversion [ RunTime:0.067527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `k_set` [ RunTime:0.067349s ]
+[ sql ] [ SQL ] SELECT `value` FROM `k_set` WHERE  `name` = 'title' LIMIT 1 [ RunTime:0.066896s ]

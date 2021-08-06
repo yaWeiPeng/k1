@@ -17,6 +17,7 @@ class Admin extends Base
 
 	public function welcome()
     {
+        redis()->set('task_num_1',1111);
         echo redis()->get('task_num_1');
 //        $this->operationLog();
 		$mysql_version = Db::query('select VERSION() as sqlversion');
